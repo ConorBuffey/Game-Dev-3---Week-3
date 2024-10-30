@@ -218,6 +218,7 @@ GameObject:
   - component: {fileID: 3569944148306816912}
   - component: {fileID: 3569944148306816919}
   - component: {fileID: 3569944148306816914}
+  - component: {fileID: 3322342576802057918}
   m_Layer: 0
   m_Name: Ghost
   m_TagString: Untagged
@@ -373,3 +374,45 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lostTrackDistance: 50
+--- !u!114 &3322342576802057918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3569944148306816916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85b156b310ef7874480e7bf7c59e3dc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: a72e029f98a1fa34ba60272827a8cc08, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3569944148306816914}
+        m_TargetAssemblyTypeName: GameDevWithMarco.Enemies.Enemies_Ghost_Movement,
+          Assembly-CSharp
+        m_MethodName: ChaseThePlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3569944147288387919}
+        m_TargetAssemblyTypeName: GameDevWithMarco.Enemies.Enemies_Ghost_Animations,
+          Assembly-CSharp
+        m_MethodName: PlayAlertedAnimations
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
