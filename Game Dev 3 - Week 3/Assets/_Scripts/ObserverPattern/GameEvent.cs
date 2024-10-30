@@ -39,4 +39,3 @@ namespace GameDevWithMarco.ObserverPattern
         }
     }
 }
-
